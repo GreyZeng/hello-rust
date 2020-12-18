@@ -42,5 +42,7 @@ rust线程安全
   - Box保证分配在堆上
   - Rc引用计数，单线程，只读
   - Arc多线程，只读
-  - Mutex互斥指针
+  - Mutex互斥指针 
+  - 保障数据安全修改
+    . Arc(Mutex(data)) -> clone Mutex的所有权–>通过Mutex修改
 
