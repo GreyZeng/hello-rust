@@ -7,7 +7,9 @@ struct Point {
     x: i32,
     y: i32,
 }
-
+fn hello() {
+    println!("hello, world");
+}
 fn simple_borrow() {
     let mut p1 = Point { x: 25, y: 24 };
     f(&mut p1); // p1的所有权转移到p，引出借用的概念
@@ -101,7 +103,8 @@ fn main() {
      let p4 = Rc::clone(&p2);
      println!("{} {} {}", p2.x, p3.x, p4.x);*/
 
-    mutex_thread();
+    //mutex_thread();
     //multi_thread();
     // simple_borrow();
+    hello()
 }
