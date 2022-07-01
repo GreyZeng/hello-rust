@@ -13,4 +13,5 @@ Cargo.lock
 **/*.exe
 **/*.pdb
 *.iml
-.idea/
+.idea/!/Cargo.lock
+!/.idea/
