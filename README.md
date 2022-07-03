@@ -1,5 +1,7 @@
 # Rust学习笔记
 
+学习资料：https://doc.rust-lang.org/book/ch01-02-hello-world.html
+
 ## Rust优势
 
 - 高性能媲美C/C++，可以做嵌入式开发
