@@ -1,6 +1,18 @@
 # Rust学习笔记
 
-学习资料：https://doc.rust-lang.org/book/ch01-02-hello-world.html
+参考资料：
+
+[Rust程序设计（第2版）](https://book.douban.com/subject/36547630/)
+
+
+## 简单介绍
+
+- cargo 是 Rust 的编译管理器，包管理器和通用工具。可以用 cargo 启动新项目，构建和运行程序，并管理代码所依赖的任何外部库。
+
+- rustc 是 Rust 的编译器，通常 cargo 会替我们调用此编译器，但是有时也需要直接运行它。
+
+- rustdoc 是 Rust 文档工具。如果你在程序中以适当形式的注释编写文档，那么 rustdoc 就可以从中构建出格式良好的 HTML。与 rustc 一样
+cargo 通过会替我们运行 rustdoc
 
 ## Rust优势
 
