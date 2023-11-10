@@ -1,13 +1,18 @@
-use std::io;
-
 fn main() {
-    println!("Hello, World");
-    println!("Guess the number!");
-    println!("Please input your guess.");
+    println!("hello, world!");
+    let result = gcd(64, 34);
+    println!("{}", result)
+}
 
-    let mut guess = String::new();
-    io::stdin()
-        .read_line(&mut guess)
-        .expect("Failed to read line");
-    println!("You guessed:{guess}");
+fn gcd(mut n: u64, mut m: u64) -> u64 {
+    assert!(n != 0 && m != 0);
+    while m != 0 {
+        if m < n {
+            let t = m;
+            m = n;
+            n = t;
+        }
+        m = m % n;
+    }
+    n
 }
